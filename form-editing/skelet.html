@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<link rel="shortcut icon" href="images/settings.png" type="image/png">
+		
+		<meta charset="utf-8">
+		
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+		<script src="new_form.js"></script>
+
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    	<link rel="stylesheet" href="style.css">
+
+		<title>Редактирование формы</title>
+
+	</head>
+
+	<body>
+		<div class="row">
+			<div id="form_editor" role="main" class="container">
+				
+				<h2>Редактирование формы</h2>
+
+				<p><input type="text" placeholder=" Заголовок формы " class="form-control"></p>
+				<p><textarea placeholder=" Описание формы " class="form-control"></textarea></p>
+
+				<p>Поля формы:</p>
+
+				<form id="my_form">
+					<div id="for_fields">
+
+							<fieldset id="my_fieldset" class="border p-4" style="width: 600px;">
+
+									<div class="row">
+										<div class = "input-group mb-3">
+											<div class="col-5">
+
+												<input type="text" placeholder=" Заголовок поля " class="form-control">
+
+											</div>
+
+											<div class="col">
+
+								 				<select id="your_select" class="selectpicker">
+												
+								 					<option>Текст - строка</option>
+								 					<option>Текст - абзац</option>
+								 					<option>Один из списка</option>
+								 					<option>Несколько из списка</option>
+								 					<option>Раскрывающийся список</option>
+
+								 				</select>
+
+							 				</div>
+
+							 				<div class="col">
+
+						 						<button type="button" class="close" aria-hidden="true" id="delete_me">&times;</button>
+
+											</div>
+										</div>
+
+										<div id="bottom_form" class="input-group mb-3">
+
+											<div class="col" id="put_there">
+
+												<p><input type="text" value = "Placeholder" class="form-control" id="change_me"></p>
+
+											</div>
+
+										<div id="bottom_form" class="input-group mb-3">
+
+											<div class="col-8"></div>
+											<div class="col-4">
+
+												<input id="check" type="checkbox" checked="checked" class="form-check-input">Обязательное поле
+
+											</div>
+										</div>
+									</div>
+
+				 			</fieldset>
+
+					</div>
+
+					<div id="bottom_form">
+						<div class="row">
+
+								<div class="col-5"></div>
+
+								<div class="col-4">
+				 					<a href="javascript://" id="plus_to_me">+ Добавить поле</a>
+								</div>
+
+								<div class="col-4"></div>
+								
+								<div class="col-1">
+
+									<button class="btn btn-primary">Закрыть</button>
+
+								</div>
+
+								<div class="col-2">
+									<button class="btn btn-primary">Сохранить</button>
+								</div>
+	
+						</div>
+					</div>
+		 		</form>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
